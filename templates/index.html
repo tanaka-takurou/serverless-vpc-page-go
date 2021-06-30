@@ -1,0 +1,23 @@
+{{define "base"}}
+<!doctype html>
+<html>
+  <head>
+{{template "headtag" .}}
+  </head>
+  <body>
+    <h1 class="ui center aligned header">AWS VPC</h1>
+    <div id="warning" class="ui hidden warning message"></div>
+    <div id="info" class="ui hidden info message">
+      <div class="header">
+        Result
+      </div>
+      <div class="ui segment">
+        <pre id="result1"></pre>
+      </div>
+      <div class="ui segment">
+        <pre id="result2"></pre>
+      </div>
+    </div>
+  </body>
+</html>
+{{end}}
